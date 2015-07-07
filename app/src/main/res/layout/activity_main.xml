@@ -1,0 +1,79 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性別:" />
+        <!-- 定義一個單選框 -->
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!-- 定義兩個單選框 -->
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喜歡的顏色:" />
+        <!-- 定義一個垂直的LinearLayout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <!-- 定義三個複選框 -->
+            <CheckBox
+                android:id="@+id/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="紅色" />
+
+            <CheckBox
+                android:id="@+id/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="藍色" />
+
+            <CheckBox
+                android:id="@+id/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="綠色" />
+        </LinearLayout>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/showCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</TableLayout>
